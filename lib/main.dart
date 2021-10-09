@@ -4,18 +4,14 @@ import 'themes/fooderlich_theme.dart';
 import 'screens/home.dart';
 
 void main() {
-  // 1
   runApp(const Fooderlich());
 }
 
 class Fooderlich extends StatelessWidget {
-  // 2
   const Fooderlich({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-
-    final theme = FooderlichTheme.dark();
-
+    final theme = FooderlichTheme.light();
     return MaterialApp(
       theme: theme,
       title: 'Fooderlich',
@@ -23,4 +19,3 @@ class Fooderlich extends StatelessWidget {
     );
   }
 }
-

@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.example.fooderlich">
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -8,6 +9,11 @@
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="fooderlich"
+=======
+    package="com.example.recipes_android_apprentice">
+   <application
+        android:label="recipes_android_apprentice"
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

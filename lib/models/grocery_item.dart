@@ -1,9 +1,23 @@
 import 'package:flutter/painting.dart';
 
+<<<<<<< HEAD
 enum Importance { low, medium, high }
 
 class GroceryItem {
   final String id;
+=======
+// 1
+enum Importance {
+  low,
+  medium,
+  high,
+}
+
+class GroceryItem {
+  // 2
+  final String id;
+  // 3
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
   final String name;
   final Importance importance;
   final Color color;
@@ -21,6 +35,7 @@ class GroceryItem {
     this.isComplete = false,
   });
 
+<<<<<<< HEAD
   GroceryItem copyWith(
       {String? id,
       String? name,
@@ -38,5 +53,25 @@ class GroceryItem {
       date: date ?? this.date,
       isComplete: isComplete ?? this.isComplete,
     );
+=======
+  // 4
+  GroceryItem copyWith({
+    String? id,
+    String? name,
+    Importance? importance,
+    Color? color,
+    int? quantity,
+    DateTime? date,
+    bool? isComplete,
+  }) {
+    return GroceryItem(
+        id: id ?? this.id,
+        name: name ?? this.name,
+        importance: importance ?? this.importance,
+        color: color ?? this.color,
+        quantity: quantity ?? this.quantity,
+        date: date ?? this.date,
+        isComplete: isComplete ?? this.isComplete);
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
   }
 }

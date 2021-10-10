@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 
 import 'grocery_item.dart';
 
@@ -18,11 +19,24 @@ class GroceryManager extends ChangeNotifier {
     notifyListeners();
   }
 
+=======
+import 'grocery_item.dart';
+
+class GroceryManager extends ChangeNotifier {
+  // 1
+  final _groceryItems = <GroceryItem>[];
+
+  // 2
+  List<GroceryItem> get groceryItems => List.unmodifiable(_groceryItems);
+
+  // 3
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
   void deleteItem(int index) {
     _groceryItems.removeAt(index);
     notifyListeners();
   }
 
+<<<<<<< HEAD
   void groceryItemTapped(int index) {
     _selectedIndex = index;
     _createNewItem = false;
@@ -42,6 +56,21 @@ class GroceryManager extends ChangeNotifier {
     notifyListeners();
   }
 
+=======
+  // 4
+  void addItem(GroceryItem item) {
+    _groceryItems.add(item);
+    notifyListeners();
+  }
+
+  // 5
+  void updateItem(GroceryItem item, int index) {
+    _groceryItems[index] = item;
+    notifyListeners();
+  }
+
+  // 6
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
   void completeItem(int index, bool change) {
     final item = _groceryItems[index];
     _groceryItems[index] = item.copyWith(isComplete: change);

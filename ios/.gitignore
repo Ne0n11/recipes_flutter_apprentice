@@ -18,6 +18,10 @@ Flutter/App.framework
 Flutter/Flutter.framework
 Flutter/Flutter.podspec
 Flutter/Generated.xcconfig
+<<<<<<< HEAD
+=======
+Flutter/ephemeral/
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
 Flutter/app.flx
 Flutter/app.zip
 Flutter/flutter_assets/

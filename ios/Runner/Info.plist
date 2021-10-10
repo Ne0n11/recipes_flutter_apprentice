@@ -11,7 +11,11 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
+<<<<<<< HEAD
 	<string>fooderlich</string>
+=======
+	<string>recipes_android_apprentice</string>
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

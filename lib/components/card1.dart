@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+<<<<<<< HEAD
 import '../fooderlich_theme.dart';
+=======
+import '/themes/fooderlich_theme.dart';
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
 import '../models/models.dart';
 
 class Card1 extends StatelessWidget {
@@ -56,9 +60,13 @@ class Card1 extends StatelessWidget {
             image: AssetImage(recipe.backgroundImage),
             fit: BoxFit.cover,
           ),
+<<<<<<< HEAD
           borderRadius: const BorderRadius.all(
             Radius.circular(10.0),
           ),
+=======
+          borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
         ),
       ),
     );

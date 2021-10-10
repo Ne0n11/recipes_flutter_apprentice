@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+<<<<<<< HEAD
 import '../fooderlich_theme.dart';
+=======
+import '/themes/fooderlich_theme.dart';
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
 import 'circle_image.dart';
 
 class AuthorCard extends StatefulWidget {
@@ -29,6 +33,7 @@ class _AuthorCardState extends State<AuthorCard> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+<<<<<<< HEAD
           Row(children: [
             CircleImage(
               imageProvider: widget.imageProvider,
@@ -49,6 +54,30 @@ class _AuthorCardState extends State<AuthorCard> {
               ],
             ),
           ]),
+=======
+          Row(
+            children: [
+              CircleImage(
+                imageProvider: widget.imageProvider,
+                imageRadius: 28,
+              ),
+              const SizedBox(width: 8),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    widget.authorName,
+                    style: FooderlichTheme.lightTextTheme.headline2,
+                  ),
+                  Text(
+                    widget.title,
+                    style: FooderlichTheme.lightTextTheme.headline3,
+                  )
+                ],
+              ),
+            ],
+          ),
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
           IconButton(
             icon: Icon(_isFavorited ? Icons.favorite : Icons.favorite_border),
             iconSize: 30,

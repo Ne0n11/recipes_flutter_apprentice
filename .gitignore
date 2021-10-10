@@ -22,6 +22,10 @@
 
 # Flutter/Dart/Pub related
 **/doc/api/
+<<<<<<< HEAD
+=======
+**/ios/Flutter/.last_build_id
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
@@ -39,6 +43,7 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
+<<<<<<< HEAD
 # Android related
 **/android/**/gradle-wrapper.jar
 **/android/.gradle
@@ -82,3 +87,9 @@ app.*.map.json
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+=======
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b

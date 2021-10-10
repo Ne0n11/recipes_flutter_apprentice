@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+<<<<<<< HEAD
 import 'fooderlich_theme.dart';
 import 'models/models.dart';
 import 'screens/splash_screen.dart';
@@ -55,6 +56,33 @@ class _FooderlichState extends State<Fooderlich> {
             home: const SplashScreen(),
           );
         },
+=======
+import '/models/models.dart';
+
+import 'themes/fooderlich_theme.dart';
+import 'screens/home.dart';
+
+void main() {
+  runApp(const Fooderlich());
+}
+
+class Fooderlich extends StatelessWidget {
+  const Fooderlich({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    final theme = FooderlichTheme.dark();
+    return MaterialApp(
+      theme: theme,
+      title: 'Fooderlich',
+      home: MultiProvider(
+        providers: [
+          // 2
+          ChangeNotifierProvider(create: (context) => TabManager()),
+          ChangeNotifierProvider(create: (context) => GroceryManager()),
+
+        ],
+        child: const Home(),
+>>>>>>> b5ba3db734acb21bb248c77ae2dff211d07ed08b
       ),
     );
   }
